@@ -9,11 +9,10 @@ BatchTube is a powerful and easy-to-use desktop application for downloading YouT
 - **Batch Download**: Paste multiple links at once.
 - **Free & Private**: No ads, no tracking. All processing happens on your computer.
 
-## 📥 Download & Install
-### [**Download BatchTube v0.2.1-beta5 for macOS**](https://github.com/Aikmathee/BashTube_Generator-release/raw/main/BatchTube_v0.2.1-beta5_Mac.dmg)
-
-1. **Install**: Open the `.dmg` file and drag the **BatchTube** icon to the **Applications** folder.
-2. **Launch**: Find BatchTube in your Applications and open it.
+## 📥 How to Get Started
+1. **Download**: Get the latest [`BatchTube_v0.2.1-beta5_Mac.dmg`](https://github.com/Aikmathee/BashTube_Generator-release/raw/main/BatchTube_v0.2.1-beta5_Mac.dmg) file from this repository.
+2. **Install**: Open the `.dmg` file and drag the **BatchTube** icon to the **Applications** folder.
+3. **Launch**: Find BatchTube in your Applications and open it.
    - *Tip: On the first launch, right-click and select "Open" to allow the app to run on macOS.*
 
 ## ⚙️ Requirements
