@@ -21,6 +21,13 @@ BatchTube is a powerful and easy-to-use desktop application for downloading YouT
 
 ---
 
+## 🐛 Found a Bug?
+Help us improve BatchTube! If you encounter any issues or have a feature request:
+- **Report it here**: [GitHub Issues](https://github.com/Aikmathee/BashTube_Generator-release/issues)
+- Please include your macOS version and a brief description of what happened.
+
+---
+
 ## ❤️ Support the Project
 BatchTube is developed and maintained by **MATHEE SUNARONG [AIKQ]**. 
 If this tool saves you time, feel free to support future updates:
