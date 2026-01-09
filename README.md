@@ -1,49 +1,41 @@
-# BatchTube v0.2.1-beta5
+# BatchTube v0.2.1-beta5 (Source)
 
-> [!CAUTION]
-> **DEVELOPERS:** Please read [DEVELOPER_REPORT.md](DEVELOPER_REPORT.md) before making any structural changes to the codebase. It contains critical information regarding macOS compatibility, Thai keyboard support, and UI thread safety.
+> [!IMPORTANT]
+> **DEVELOPER ACCESS ONLY**: This is the private source code repository. Contains logic, assets, and internal automation scripts.
 
-A powerful desktop tool to download YouTube videos and audio with professional-grade features, integrated progress tracking, and batch support.
+## 🛠 Project Architecture
+BatchTube is built as a modern Python wrapper for power users.
 
-## 🐍 Python App (Primary)
-This version provides a native GUI experience with an integrated download engine, live logging, and multi-URL support.
+### Core Components:
+- **`bashtube.py`**: The heart of the app. Handles GUI (CustomTkinter), thread orchestration, and command generation.
+- **`bin/`**: Pre-compiled binaries for yt-dlp and FFmpeg (bundled for convenience).
+- **`package_app.sh`**: The "single-click" packaging script for macOS. Handles venv creation, PyInstaller bundling, and DMG creation.
+- **`publish_release.sh`**: Automation script to sync public artifacts to the distribution folder.
 
-**Files:**
-- `bashtube.py`: Core application (CustomTkinter).
-- `run_app.sh`: Automated setup (VENV + Dependencies).
-- `requirements.txt`: Python package requirements.
-- `test_logic.py`: Logic verification suite.
+## 🚀 Development Setup
+1. **Requirements**: Python 3.12+ (Python 3.14 recommended for macOS compatibility).
+2. **Run from source**:
+   ```bash
+   ./run_app.sh
+   ```
+   *This script handles virtual environment creation and dependency installation automatically.*
 
-**How to Run:**
-1. Open Terminal.
-2. Run: `./run_app.sh`
-   *The app will automatically install dependencies and launch.*
+## 📦 Packaging Workflow
+To create a new release:
+1. Update version strings in `bashtube.py` and documentation.
+2. Run `./package_app.sh` (Generates `.dmg` in root).
+3. Run `./publish_release.sh` (Syncs artifacts to `BashTube_Generator_public/`).
+4. Commit source code to Private Git.
+5. Push `BashTube_Generator_public` to Public GitHub.
 
 ---
 
-## 🚀 Key Features (v0.2.1-beta)
-# BatchTube Generator (v0.2.1-beta5) 🚀
-**The Ultimate YouTube Downloader GUI for macOS & Power Users**
-
-BatchTube is a powerful, modern GUI wrapper for `yt-dlp` and `ffmpeg`. It turns complex command-line operations into a simple, one-click experience.
-
-## ✨ Key Features (Beta 01 Final)
-- **⚡️ Zero-Lag UI**: Optimized "Debounced Scheduler" ensures the app remains instantly responsive, even when pasting hundreds of URLs.
-- **📦 Self-Contained**: Includes `yt-dlp` and `ffmpeg` built-in. No need to install Homebrew or Python manually!
-- **🔧 Built-in Maintenance**: Self-diagnostic startup checks and an auto-healing maintenance window.
-- **🖱️ One-Click Install**: Comes as a standard macOS `.dmg` file. Drag, drop, and ready to go.
-- **Batch Processing**: Download multiple URLs at once (one per line).
-- **Integrated Download Engine**: Real-time progress bar and log console within the app.
-- **Advanced Format Selection**:
-    - **Presets**: Quick selection for 1080p, 4K, 8K, etc.
-    - **Server-Side**: Fetch live format lists from YouTube servers.
-- **Robust Re-encoding**: Support for H.264, H.265 (HEVC), and ProRes.
-- **Cookie Support**: Bypasses YouTube bot detection by using your browser cookies (Chrome, Safari, Firefox).
-- **Integrated Maintenance Tools**: Built-in `yt-dlp` updater and dependency checks.
-- **Post-Processing**: Embed Thumbnails, Metadata, Subtitles, and SponsorBlock removal.
-- **Visual Feedback**: Real-time FFmpeg progress % and animated activity indicator dots.
-- **Convenient Workflow**: Single-click copy, Open Folder, Reset App, and Exit App button.
-- **Separate File Downloads**: Download SRT subtitles and thumbnails as standalone files.
+## ✨ Features (v0.2.1-beta5)
+- **⚡️ Zero-Lag UI**: Optimized Scheduler for high-volume URL inputs.
+- **📦 Self-Contained**: Multi-OS binary discovery logic.
+- **🔧 Maintenance Tools**: Integrated yt-dlp updater and diagnostics.
+- **Mousewheel Support**: Native macOS touchpad scrolling optimization.
+- **Separate Downloads**: SRT and Thumbnail extraction logic.
 
 ---
 
