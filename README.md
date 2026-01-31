@@ -26,9 +26,16 @@
 ## 💾 Download & Installation
 
 ### 🍎 macOS (Apple Silicon & Intel)
+
+#### Option 1: Direct Download (Standard)
 1.  **Download**: [BatchTube_0.2.1-beta6.7.dmg](https://github.com/Aikmathee/BashTube_Generator-release/raw/main/BatchTube_0.2.1-beta6.7.dmg)
 2.  **Install**: Open the `.dmg` and drag **BatchTube** to your **Applications** folder.
-3.  **Run**: Launch from your Applications or Spotlight.
+
+#### Option 2: Homebrew (Power Users)
+Install directly using the Cask definition:
+```bash
+brew install --cask https://github.com/Aikmathee/BashTube_Generator-release/raw/main/batchtube.rb
+```
 
 ### 🪟 Windows (v0.2.1-beta5)
 - **Download**: [BatchTube_v0.2.1-beta5_Win.exe](https://github.com/Aikmathee/BashTube_Generator-release/raw/main/BatchTube_v0.2.1-beta5_Win.exe)
