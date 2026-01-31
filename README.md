@@ -1,86 +1,53 @@
-# BatchTube Generator v0.2.1-beta6.7 (Private Source) 💎
+# BatchTube 🚀
 
-This is the **private development repository** for BatchTube Generator. It represents a complete architectural overhaul from previous versions, moving from a legacy Tkinter GUI to a modern, high-performance API-driven desktop application.
+**BatchTube** is a professional, high-performance desktop application designed for fast and reliable video downloads. It combines a modern, sleek interface with powerful backend logic to handle even the most complex YouTube challenges.
 
 ---
 
 ## 🌟 Key Features (v0.2.1-beta6.7)
 
-### 🚀 Modern Logic & Performance
-- **Instant Launch**: No more staggered animations. The app loads effectively instantly for a snappy experience.
-- **Deep Performance**: Optimized rendering and log buffering to handle long download sessions without lag.
-- **API-Driven Architecture**: Powered by **FastAPI** (Backend) and **React + Vite** (Frontend), communicating via WebSockets for real-time progress.
+### 🚀 Performance & Design
+- **Instant Launch**: Optimized for a snappy and responsive experience.
+- **Premium UI**: Modern dark-mode aesthetic with smooth animations and intuitive controls.
+- **Real-time Progress**: Precise, live progress updates for both downloads and media merging.
 
-### 🛡️ Smart Troubleshooting (New!)
-- **Smart Log Analysis**: The app automatically detects errors (e.g., Cookies, Region Lock) and suggests solutions via a premium **Pop-up Modal**.
-- **System Integrity Checks**: Detects missing binaries (`yt-dlp`, `FFmpeg`) permission errors, and Python environment issues.
-- **Actionable Tips**: Connects directly to **Advanced Options** or **Maintenance Tools** to fix problems with one click.
-- **Global English**: All troubleshooting advice is in clear, professional English.
+### 🛡️ Smart Troubleshooting
+- **Auto-Analysis**: Intelligently detects and explains common errors (e.g., region locks, private videos).
+- **Interactive Tips**: Provides actionable solutions within the app to fix issues instantly.
+- **Self-Diagnostics**: Built-in tools to verify your system's health and connectivity.
 
-### 📼 Enhanced Video Engine
-- **Non-blocking Architecture**: Folder operations and heavy backend tasks run in separate threads, keeping the UI fully responsive.
-- **Smart UI Sync**: Format selection automatically detects and injects missing resolutions/codecs (e.g. `1920x996`, `VP9`) into standard dropdowns.
-- **Robust Format Logic**: Intelligent default to "Video + Audio" merging and correct mapping of Force Codec options.
-- **ProRes Support**: High-quality transcoding to ProRes 422 for professional editing workflows.
-- **Daily Auto-Updates**: Automatically checks and updates `yt-dlp` to ensure compatibility with YouTube's latest changes.
+### 📼 Professional Video Engine
+- **Universal Compatibility**: Supports a wide range of formats (MP4, MKV, MOV) and high-quality codecs (H.264, HEVC, ProRes).
+- **Format Injection**: Automatically detects and handles non-standard resolutions and codecs.
+- **Auto-Updates**: Features a self-healing engine that automatically updates its core components to stay compatible with platform changes.
 
 ---
 
-## 📂 Project Structure
+## 💾 Download & Installation
 
-```text
-src/
-├── backend/            # Python FastAPI Service
-│   ├── api/            # Routes & WebSocket Endpoints
-│   ├── services/       # Core Logic (YtDlpService)
-│   ├── static/         # Compiled Frontend Assets
-│   └── main.py         # Application Entry Point
-└── frontend/           # React + Vite Source Code
-    ├── src/components  # UI Components
-    └── src/App.jsx     # Main UI Logic
-scripts/                # Automation Tools
-├── run_beta6_dev.sh    # Usage: Hot-Reload Dev Mode
-├── build_beta6.sh      # Usage: Compile Frontend
-└── run_app.sh          # Usage: Run Production Build
-```
+### 🍎 macOS (Apple Silicon & Intel)
+1.  **Download**: [BatchTube_0.2.1-beta6.7.dmg](https://github.com/Aikmathee/BashTube_Generator-release/raw/main/BatchTube_0.2.1-beta6.7.dmg)
+2.  **Install**: Open the `.dmg` and drag **BatchTube** to your **Applications** folder.
+3.  **Run**: Launch from your Applications or Spotlight.
+
+### 🪟 Windows (v0.2.1-beta5)
+- **Download**: [BatchTube_v0.2.1-beta5_Win.exe](https://github.com/Aikmathee/BashTube_Generator-release/raw/main/BatchTube_v0.2.1-beta5_Win.exe)
+- **Install**: Run the executable and follow the prompts.
 
 ---
 
-## 🚀 Development Workflow
-
-### 1. Run in Development Mode
-To work on the UI with hot-reloading:
-```bash
-bash scripts/run_beta6_dev.sh
-```
-
-### 2. Build for Production
-To compile the React frontend and verify the build:
-```bash
-bash scripts/build_beta6.sh
-```
-
-### 3. Run Production Build
-To test the finalized application as it would run for the user:
-```bash
-bash scripts/run_app.sh
-```
+## ⚙️ Requirements
+- **macOS**: 12.0+ (Monterey, Ventura, Sonoma, Sequoia)
+- **Windows**: 10, 11 (64-bit)
 
 ---
 
-## 📦 Maintenance Tools
+## ❤️ Support & Community
+Developed with passion by **MATHEE SUNARONG [AIKQ]**.
 
-- **Self-Diagnostics**: Use the "Maintenance & Tools" menu to run a system health check.
-- **Reset App**: Clears all local state and configurations.
-- **Cleanup**: Removes temporary build files (`__pycache__`, `dist`, etc.).
-
----
-
-## 🔒 Security Note
-Do **NOT** push this source code to any public repository. This repo contains private implementation details, signing keys, and internal logic. Use the `BashTube_Generator_release` repository for public distribution.
+- **Coffee Service**: [☕ Buy me a Coffee](https://buymeacoffee.com/aik_mathee)
+- **Bug Reports**: [GitHub Issues](https://github.com/Aikmathee/BashTube_Generator-release/issues)
+- **Social**: [GitHub](https://github.com/Aikmathee) | [Facebook](https://www.facebook.com/AIK.MATHEE/) | [Instagram](https://www.instagram.com/aik_mathee/)
 
 ---
-
-## 👨‍💻 Maintainer
-**MATHEE SUNARONG [AIKQ]**
-[https://buymeacoffee.com/aik_mathee](https://buymeacoffee.com/aik_mathee)
+*No Ads. No Tracking. Just Performance.* 💎
