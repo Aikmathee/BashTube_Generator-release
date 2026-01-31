@@ -31,10 +31,14 @@
 1.  **Download**: [BatchTube_0.2.1-beta6.7.dmg](https://github.com/Aikmathee/BashTube_Generator-release/raw/main/BatchTube_0.2.1-beta6.7.dmg)
 2.  **Install**: Open the `.dmg` and drag **BatchTube** to your **Applications** folder.
 
-#### Option 2: Homebrew (Power Users)
-Install directly using the Cask definition:
+#### Option 2: Homebrew (Recommended for Mac)
+Install using the official Homebrew Tap for a seamless experience:
 ```bash
-brew install --cask https://github.com/Aikmathee/BashTube_Generator-release/raw/main/batchtube.rb
+# 1. Add the Tap (สูตรการติดตั้ง)
+brew tap Aikmathee/batchtube https://github.com/Aikmathee/BashTube_Generator-release.git
+
+# 2. Install
+brew install --cask batchtube
 ```
 
 ### 🪟 Windows (v0.2.1-beta5)
