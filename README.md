@@ -1,41 +1,86 @@
-# BatchTube v0.2.1-beta5 🚀
+# BatchTube Generator v0.2.1-beta6.7 (Private Source) 💎
 
-BatchTube is a powerful and easy-to-use desktop application for downloading YouTube videos and audio.
-BatchTube คือโปรแกรมสำหรับดาวน์โหลดวิดีโอและเสียงจาก YouTube ที่ใช้งานง่ายและทรงพลัง
-
----
-
-## 📥 Downloads (ดาวน์โหลด)
-
-### 🪟 Windows
-1. **Download**: [`BatchTube_v0.2.1-beta5_Win.exe`](https://github.com/Aikmathee/BashTube_Generator-release/raw/main/BatchTube_v0.2.1-beta5_Win.exe)
-2. **Launch**: Just open the `.exe` file to start. (เปิดไฟล์ .exe เพื่อเริ่มใช้งานได้ทันที)
-3. **Note**: On first launch, Windows SmartScreen may show a warning. Click "More info" > "Run anyway". (หาก Windows แสดงคำเตือน ให้กด "More info" และ "Run anyway")
-
-### 🍎 macOS
-1. **Download**: [`BatchTube_v0.2.1-beta5_Mac.dmg`](https://github.com/Aikmathee/BatchTube_Generator-release/raw/main/BatchTube_v0.2.1-beta5_Mac.dmg)
-2. **Install**: Open the `.dmg` and drag **BatchTube** to your **Applications** folder. (เปิดไฟล์ .dmg และลากตัวโปรแกรมไปที่ Applications)
-3. **Launch**: Find it in your Applications. On first launch, right-click and select "Open" to allow it to run. (คลิกขวาแล้วเลือก "Open" ในการเปิดใช้งานครั้งแรก)
+This is the **private development repository** for BatchTube Generator. It represents a complete architectural overhaul from previous versions, moving from a legacy Tkinter GUI to a modern, high-performance API-driven desktop application.
 
 ---
 
-## ✨ Features (คุณสมบัติ)
-- **High Quality**: Supports 720p up to 8K. (รองรับความละเอียดสูงสุดถึง 8K)
-- **Multiple Formats**: MP4, MKV, MOV, MP3, WAV. (รองรับหลายนามสกุลไฟล์)
-- **Batch Download**: Paste multiple links at once. (ดาวน์โหลดพร้อมกันได้หลายลิงก์)
-- **Free & Private**: No ads, no tracking. (ฟรีและเป็นส่วนตัว ไม่มีโฆษณา)
-- **Built-in Tools**: FFmpeg and yt-dlp are included. (มีเครื่องมือในตัว ไม่ต้องติดตั้งเพิ่ม)
+## 🌟 Key Features (v0.2.1-beta6.7)
+
+### 🚀 Modern Logic & Performance
+- **Instant Launch**: No more staggered animations. The app loads effectively instantly for a snappy experience.
+- **Deep Performance**: Optimized rendering and log buffering to handle long download sessions without lag.
+- **API-Driven Architecture**: Powered by **FastAPI** (Backend) and **React + Vite** (Frontend), communicating via WebSockets for real-time progress.
+
+### 🛡️ Smart Troubleshooting (New!)
+- **Smart Log Analysis**: The app automatically detects errors (e.g., Cookies, Region Lock) and suggests solutions via a premium **Pop-up Modal**.
+- **System Integrity Checks**: Detects missing binaries (`yt-dlp`, `FFmpeg`) permission errors, and Python environment issues.
+- **Actionable Tips**: Connects directly to **Advanced Options** or **Maintenance Tools** to fix problems with one click.
+- **Global English**: All troubleshooting advice is in clear, professional English.
+
+### 📼 Enhanced Video Engine
+- **Non-blocking Architecture**: Folder operations and heavy backend tasks run in separate threads, keeping the UI fully responsive.
+- **Smart UI Sync**: Format selection automatically detects and injects missing resolutions/codecs (e.g. `1920x996`, `VP9`) into standard dropdowns.
+- **Robust Format Logic**: Intelligent default to "Video + Audio" merging and correct mapping of Force Codec options.
+- **ProRes Support**: High-quality transcoding to ProRes 422 for professional editing workflows.
+- **Daily Auto-Updates**: Automatically checks and updates `yt-dlp` to ensure compatibility with YouTube's latest changes.
 
 ---
 
-## ⚙️ Requirements (ความต้องการระบบ)
-- **Windows**: Windows 10/11 (64-bit)
-- **macOS**: macOS 12.0 or newer (Monterey+)
+## 📂 Project Structure
+
+```text
+src/
+├── backend/            # Python FastAPI Service
+│   ├── api/            # Routes & WebSocket Endpoints
+│   ├── services/       # Core Logic (YtDlpService)
+│   ├── static/         # Compiled Frontend Assets
+│   └── main.py         # Application Entry Point
+└── frontend/           # React + Vite Source Code
+    ├── src/components  # UI Components
+    └── src/App.jsx     # Main UI Logic
+scripts/                # Automation Tools
+├── run_beta6_dev.sh    # Usage: Hot-Reload Dev Mode
+├── build_beta6.sh      # Usage: Compile Frontend
+└── run_app.sh          # Usage: Run Production Build
+```
 
 ---
 
-## ❤️ Support & Maintenance
-Developed by **MATHEE SUNARONG [AIKQ]**. 
-[☕ Buy me a Coffee](https://buymeacoffee.com/aik_mathee)
+## 🚀 Development Workflow
 
-Report bugs here (แจ้งปัญหา): [GitHub Issues](https://github.com/Aikmathee/BashTube_Generator-release/issues)
+### 1. Run in Development Mode
+To work on the UI with hot-reloading:
+```bash
+bash scripts/run_beta6_dev.sh
+```
+
+### 2. Build for Production
+To compile the React frontend and verify the build:
+```bash
+bash scripts/build_beta6.sh
+```
+
+### 3. Run Production Build
+To test the finalized application as it would run for the user:
+```bash
+bash scripts/run_app.sh
+```
+
+---
+
+## 📦 Maintenance Tools
+
+- **Self-Diagnostics**: Use the "Maintenance & Tools" menu to run a system health check.
+- **Reset App**: Clears all local state and configurations.
+- **Cleanup**: Removes temporary build files (`__pycache__`, `dist`, etc.).
+
+---
+
+## 🔒 Security Note
+Do **NOT** push this source code to any public repository. This repo contains private implementation details, signing keys, and internal logic. Use the `BashTube_Generator_release` repository for public distribution.
+
+---
+
+## 👨‍💻 Maintainer
+**MATHEE SUNARONG [AIKQ]**
+[https://buymeacoffee.com/aik_mathee](https://buymeacoffee.com/aik_mathee)
