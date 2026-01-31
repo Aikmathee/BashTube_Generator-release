@@ -34,13 +34,30 @@
 #### Option 2: Homebrew (Recommended for Mac)
 Install using the official Homebrew Tap for a seamless experience:
 ```bash
-# 1. Add the Tap (สูตรการติดตั้ง)
+# 1. Add the Tap
 brew tap Aikmathee/batchtube https://github.com/Aikmathee/BashTube_Generator-release.git
 
 # 2. Install
 brew install --cask batchtube
 ```
 
+---
+
+## 🛡️ Security & Permissions (macOS)
+
+Since **BatchTube** is a community-driven project and not yet signed with an Apple Developer certificate, macOS Gatekeeper may show a warning upon the first launch.
+
+### How to open:
+1.  **Launch** BatchTube. If you see a "unidentified developer" warning, click **OK/Cancel**.
+2.  Open **System Settings** -> **Privacy & Security**.
+3.  Scroll down to the **Security** section.
+4.  You will see a message: *"BatchTube was blocked from use because it is not from an identified developer."*
+5.  Click **"Open Anyway"** and enter your password if prompted.
+6.  Click **Open** on the final confirmation.
+
+*This only needs to be done once.* 🔒
+
+---
 ### 🪟 Windows (v0.2.1-beta5)
 - **Download**: [BatchTube_v0.2.1-beta5_Win.exe](https://github.com/Aikmathee/BashTube_Generator-release/raw/main/BatchTube_v0.2.1-beta5_Win.exe)
 - **Install**: Run the executable and follow the prompts.
