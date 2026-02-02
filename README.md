@@ -20,6 +20,7 @@
 - **Universal Compatibility**: Supports a wide range of formats (MP4, MKV, MOV) and high-quality codecs (H.264, HEVC, ProRes).
 - **Format Injection**: Automatically detects and handles non-standard resolutions and codecs.
 - **Auto-Updates**: Features a self-healing engine that automatically updates its core components to stay compatible with platform changes.
+- **Platform-Aware Updates**: You'll only be notified of new versions when they are available for your specific OS.
 
 ---
 
