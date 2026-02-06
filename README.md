@@ -4,11 +4,13 @@
 
 ---
 
-## 🌟 Key Features (v0.2.1-beta6.7)
+## 🌟 Key Features (v0.2.1-beta7.0)
 
 ### 🚀 Performance & Design
 - **Instant Launch**: Optimized for a snappy and responsive experience.
 - **Premium UI**: Modern dark-mode aesthetic with smooth animations and intuitive controls.
+- **Universal Font Consistency (New!)**: Integrated **Google Fonts** (Outfit, JetBrains Mono) to ensure 100% visual stability across all operating systems. Text, dropdowns, and logs now look perfect on macOS, Windows, and Linux alike.
+- **Verified Stable**: Codebase passed functional API verification and static analysis for v0.2.1-beta7.0.
 - **Real-time Progress**: Precise, live progress updates for both downloads and media merging.
 
 ### 🛡️ Smart Troubleshooting
@@ -29,7 +31,7 @@
 ### 🍎 macOS (Apple Silicon & Intel)
 
 #### Option 1: Direct Download (Standard)
-1.  **Download**: [BatchTube_0.2.1-beta6.7.dmg](https://github.com/Aikmathee/BashTube_Generator-release/raw/main/BatchTube_0.2.1-beta6.7.dmg)
+1.  **Download**: [BatchTube_0.2.1-beta7.0.dmg](https://github.com/Aikmathee/BashTube_Generator-release/raw/main/BatchTube_0.2.1-beta7.0.dmg)
 2.  **Install**: Open the `.dmg` and drag **BatchTube** to your **Applications** folder.
 
 #### Option 2: Homebrew (Recommended for Mac)
