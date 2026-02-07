@@ -61,9 +61,9 @@ Since **BatchTube** is a community-driven project and not yet signed with an App
 *This only needs to be done once.* 🔒
 
 ---
-### 🪟 Windows (v0.2.1-beta5)
-- **Download**: [BatchTube_v0.2.1-beta5_Win.exe](https://github.com/Aikmathee/BashTube_Generator-release/raw/main/BatchTube_v0.2.1-beta5_Win.exe)
-- **Install**: Run the executable and follow the prompts.
+### 🪟 Windows (v0.2.1-beta7.0)
+- **Download**: [BatchTube.exe](https://github.com/Aikmathee/BashTube_Generator-release/raw/main/BatchTube.exe)
+- **Install**: Just run the executable! No installation required.
 
 ---
 
