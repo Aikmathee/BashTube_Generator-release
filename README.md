@@ -8,9 +8,9 @@
 
 ### 🚀 Performance & Design
 - **Instant Launch**: Optimized for a snappy and responsive experience.
+- **Smart Queue Management (New!)**: Add multiple videos or playlists to a queue and download them all at once.
 - **Premium UI**: Modern dark-mode aesthetic with smooth animations and intuitive controls.
-- **Universal Font Consistency (New!)**: Integrated **Google Fonts** (Outfit, JetBrains Mono) to ensure 100% visual stability across all operating systems. Text, dropdowns, and logs now look perfect on macOS, Windows, and Linux alike.
-- **Verified Stable**: Codebase passed functional API verification and static analysis for v0.2.1-beta8.0.
+- **Universal Font Consistency**: Integrated **Google Fonts** (Outfit, JetBrains Mono) for stable visuals across all OS.
 - **Real-time Progress**: Precise, live progress updates for both downloads and media merging.
 
 ### 🛡️ Smart Troubleshooting
@@ -19,10 +19,10 @@
 - **Self-Diagnostics**: Built-in tools to verify your system's health and connectivity.
 
 ### 📼 Professional Video Engine
+- **Playlist Selective Download (New!)**: Full support for YouTube playlists with the ability to select specific items.
+- **Multi-App Support**: Enhanced download logic for **TikTok, Facebook, Instagram, and Twitter (X)**.
 - **Universal Compatibility**: Supports a wide range of formats (MP4, MKV, MOV) and high-quality codecs (H.264, HEVC, ProRes).
-- **Format Injection**: Automatically detects and handles non-standard resolutions and codecs.
-- **Auto-Updates**: Features a self-healing engine that automatically updates its core components to stay compatible with platform changes.
-- **Platform-Aware Updates**: You'll only be notified of new versions when they are available for your specific OS.
+- **Auto-Updates**: Features a self-healing engine that automatically updates its core components (yt-dlp).
 
 ---
 
