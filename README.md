@@ -4,7 +4,7 @@
 
 ---
 
-## 🌟 Key Features (v0.2.1-beta8.0)
+## 🌟 Key Features (v0.2.1-beta9.0)
 
 ### 🚀 Performance & Design
 - **Instant Launch**: Optimized for a snappy and responsive experience.
@@ -20,7 +20,7 @@
 
 ### 📼 Professional Video Engine
 - **Playlist Selective Download (New!)**: Full support for YouTube playlists with the ability to select specific items.
-- **Multi-App Support**: Enhanced download logic for **TikTok, Facebook, Instagram, and Twitter (X)**.
+- **Multi-Site Support**: Uses current yt-dlp extractors for YouTube and many public media sites. Social platforms may require browser cookies and can change without notice.
 - **Universal Compatibility**: Supports a wide range of formats (MP4, MKV, MOV) and high-quality codecs (H.264, HEVC, ProRes).
 - **Auto-Updates**: Features a self-healing engine that automatically updates its core components (yt-dlp).
 
@@ -28,10 +28,10 @@
 
 ## 💾 Download & Installation
 
-### 🍎 macOS (Apple Silicon & Intel)
+### 🍎 macOS (Apple Silicon)
 
 #### Option 1: Direct Download (Standard)
-1.  **Download**: [BatchTube_0.2.1-beta8.0.dmg](https://github.com/Aikmathee/BashTube_Generator-release/raw/main/BatchTube_0.2.1-beta8.0.dmg)
+1.  **Download**: Use the `BatchTube_0.2.1-beta9.0.dmg` asset from the [latest GitHub Release](https://github.com/Aikmathee/BashTube_Generator-release/releases/latest).
 2.  **Install**: Open the `.dmg` and drag **BatchTube** to your **Applications** folder.
 
 #### Option 2: Homebrew (Recommended for Mac)
@@ -68,7 +68,7 @@ Since **BatchTube** is a community-driven project and not yet signed with an App
 ---
 
 ## ⚙️ Requirements
-- **macOS**: 12.0+ (Monterey, Ventura, Sonoma, Sequoia)
+- **macOS**: 12.0+ on Apple Silicon (M1 or newer)
 - **Windows**: 10, 11 (64-bit)
 
 ---
